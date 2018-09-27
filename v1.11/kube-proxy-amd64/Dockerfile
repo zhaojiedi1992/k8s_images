@@ -1,2 +1,2 @@
-FROM gcr.io/google_containers/etcd-amd64:3.2.18
+FROM gcr.io/google_containers/kube-proxy-amd64:v1.11.3
 MAINTAINER zhaojiedi1992@outlook.com
