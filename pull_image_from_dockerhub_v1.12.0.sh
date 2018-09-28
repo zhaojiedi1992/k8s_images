@@ -4,12 +4,12 @@ gcr_name=k8s.gcr.io
 myhub_name=zhaojiedi1992
 # define images 
 images=(
-	kube-apiserver-amd64:v1.10.0
- kube-controller-manager-amd64:v1.10.0
- kube-scheduler-amd64:v1.10.0
- kube-proxy-amd64:v1.10.0
+	kube-apiserver-amd64:v1.12.0
+ kube-controller-manager-amd64:v1.12.0
+ kube-scheduler-amd64:v1.12.0
+ kube-proxy-amd64:v1.12.0
  pause:3.1
- etcd-amd64:3.1.12
+ etcd-amd64:3.2.18
  coredns:1.1.3
 )
 

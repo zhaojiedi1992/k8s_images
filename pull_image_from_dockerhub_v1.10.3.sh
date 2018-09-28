@@ -16,5 +16,5 @@ images=(
 for image in ${images[@]}; do 
 	docker pull $myhub_name/$image
 	docker tag  $myhub_name/$image $gcr_name/$image
-	#docer rmi $myhub_name/$image
+	docker rmi $myhub_name/$image
 done
