@@ -108,7 +108,7 @@
 
 上面使用的pull_image脚本会去dockerhub的[zhaojiedi1992](https://hub.docker.com/r/zhaojiedi1992/)这个仓库去拉取，我已经配置组件的好多tag了，如果没有你需要的版本，可以联系我或者fork后自己配置下。这里提供一下dockerhub的自动构建截图，具体的详细配置自行百度下。
 
-![etcd dockerhub自动构建图](/kube-apiserver-amd64.jpg)
+![etcd dockerhub自动构建图](kube-apiserver-amd64.jpg)
 
 
 
