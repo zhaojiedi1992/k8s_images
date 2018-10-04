@@ -3,7 +3,7 @@
 访问的问题，本文就是为解决大陆无法下载镜像的问题的。
 
 我在博客园写了一篇k8s的安装博客，可以直接参考博客。
-[完成安装参考](https://www.cnblogs.com/zhaojiedi1992/p/zhaojiedi_liunx_53_k8s.html)
+[完成安装参考](https://www.cnblogs.com/zhaojiedi1992/p/zhaojiedi_liunx_53_kubernates_install.html)
 
 ## 目录说明
 
