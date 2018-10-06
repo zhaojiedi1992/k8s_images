@@ -5,12 +5,12 @@ myhub_name=zhaojiedi1992
 # define images 
 images=(
         kubernetes-dashboard-amd64:v1.10.0
-	kube-apiserver-amd64:v1.10.5
- kube-controller-manager-amd64:v1.10.5
- kube-scheduler-amd64:v1.10.5
- kube-proxy-amd64:v1.10.5
+	kube-apiserver-amd64:v1.12.1
+ kube-controller-manager-amd64:v1.12.1
+ kube-scheduler-amd64:v1.12.1
+ kube-proxy-amd64:v1.12.1
  pause:3.1
- etcd-amd64:3.1.12
+ etcd-amd64:3.2.18
  coredns:1.1.3
 )
 

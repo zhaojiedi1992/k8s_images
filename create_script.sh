@@ -3,6 +3,7 @@
 urls=(
     https://raw.githubusercontent.com/kubernetes/kubernetes/master/CHANGELOG-1.10.md
     https://raw.githubusercontent.com/kubernetes/kubernetes/master/CHANGELOG-1.11.md
+    https://raw.githubusercontent.com/kubernetes/kubernetes/master/CHANGELOG-1.12.md
     #https://raw.githubusercontent.com/kubernetes/kubernetes/master/CHANGELOG-1.9.md
     #https://raw.githubusercontent.com/kubernetes/kubernetes/master/CHANGELOG-1.9.md
 )
@@ -28,6 +29,7 @@ for url in ${urls[@]}; do
 		# create sh file 
 		images2=$(echo $images | sed 's@k8s.gcr.io/@@g' |sed 's@ @\\\n @g')
 		cat pull_image_from_dockerhub.template |sed -r "s@<images>@$images2@g" >pull_image_from_dockerhub_${tag}.sh
+		chmod a+x pull_image_from_dockerhub_${tag}.sh
 				
 	done
 done
