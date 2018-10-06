@@ -4,6 +4,7 @@ gcr_name=k8s.gcr.io
 myhub_name=zhaojiedi1992
 # define images 
 images=(
+        kubernetes-dashboard-amd64:v1.10.0
 	<images>
 )
 
