@@ -4,6 +4,7 @@ urls=(
     https://raw.githubusercontent.com/kubernetes/kubernetes/master/CHANGELOG-1.10.md
     https://raw.githubusercontent.com/kubernetes/kubernetes/master/CHANGELOG-1.11.md
     https://raw.githubusercontent.com/kubernetes/kubernetes/master/CHANGELOG-1.12.md
+    https://raw.githubusercontent.com/kubernetes/kubernetes/master/CHANGELOG-1.13.md
     #https://raw.githubusercontent.com/kubernetes/kubernetes/master/CHANGELOG-1.9.md
     #https://raw.githubusercontent.com/kubernetes/kubernetes/master/CHANGELOG-1.9.md
 )
