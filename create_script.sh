@@ -1,12 +1,16 @@
 #!/bin/bash
 
 urls=(
-    https://raw.githubusercontent.com/kubernetes/kubernetes/master/CHANGELOG-1.10.md
-    https://raw.githubusercontent.com/kubernetes/kubernetes/master/CHANGELOG-1.11.md
-    https://raw.githubusercontent.com/kubernetes/kubernetes/master/CHANGELOG-1.12.md
+    #https://raw.githubusercontent.com/kubernetes/kubernetes/master/CHANGELOG-1.10.md
+    #https://raw.githubusercontent.com/kubernetes/kubernetes/master/CHANGELOG-1.11.md
+    #https://raw.githubusercontent.com/kubernetes/kubernetes/master/CHANGELOG-1.12.md
     https://raw.githubusercontent.com/kubernetes/kubernetes/master/CHANGELOG-1.13.md
-    #https://raw.githubusercontent.com/kubernetes/kubernetes/master/CHANGELOG-1.9.md
-    #https://raw.githubusercontent.com/kubernetes/kubernetes/master/CHANGELOG-1.9.md
+    https://raw.githubusercontent.com/kubernetes/kubernetes/master/CHANGELOG-1.14.md
+    https://raw.githubusercontent.com/kubernetes/kubernetes/master/CHANGELOG-1.15.md
+    https://raw.githubusercontent.com/kubernetes/kubernetes/master/CHANGELOG-1.16.md
+    https://raw.githubusercontent.com/kubernetes/kubernetes/master/CHANGELOG-1.17.md
+    https://raw.githubusercontent.com/kubernetes/kubernetes/master/CHANGELOG-1.18.md
+    https://raw.githubusercontent.com/kubernetes/kubernetes/master/CHANGELOG-1.19.md
 )
 
 for url in ${urls[@]}; do
@@ -17,10 +21,12 @@ for url in ${urls[@]}; do
 		#mkdir $tag -pv 
 		# create sub dir
          	images=$(kubeadm config  images list  --kubernetes-version=$tag)
+		#echo $images >> images.txt
 		if [ -z "$images" ] ; then 
 			continue
 		fi
 		for image in $images; do 
+			echo $image $tag >> images.txt
 			version=$(echo $image |awk -F ":" '{print $NF}')
 			subdir=$(echo $image |sed -r 's@.*/(.*):.*@\1@g')
 			mkdir  $tag/$subdir -pv

@@ -11,7 +11,7 @@ images=(
  kube-proxy:v1.13.1
  pause:3.1
  etcd:3.2.24
- coredns:1.2.6
+ coredns:1.3.1
 )
 
 for image in ${images[@]}; do 
